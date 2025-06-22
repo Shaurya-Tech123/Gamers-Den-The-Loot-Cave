@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Den - Classic Games Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;700&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <nav class="main-nav">
+                <div class="nav-brand">
+                    <div class="logo">
+                        <i class="fas fa-gamepad"></i>
+                        <h1 class="title">Gamers Den: The Loot Cave</h1>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#games" class="nav-link"><i class="fas fa-dice"></i> Games</a></li>
+                    <li><a href="#about" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero-content">
+                <h2 class="hero-title">Classic Games Reimagined</h2>
+                <p class="hero-subtitle">Experience the nostalgia of classic games with modern graphics and smooth
+                    gameplay</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Games</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Fun</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Free</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="games-showcase">
+                <h2 class="section-title">Choose Your Game</h2>
+                <div class="games-grid">
+                    <div class="game-card" data-game="tictactoe">
+                        <div class="game-card-header">
+                            <div class="game-icon">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <h3>Tic Tac Toe</h3>
+                            <p>Classic strategy game with AI opponent</p>
+                        </div>
+                        <div class="game-card-body">
+                            <div class="game-preview">
+                                <div class="mini-board">
+                                    <div class="mini-cell x"></div>
+                                    <div class="mini-cell o"></div>
+                                    <div class="mini-cell x"></div>
+                                    <div class="mini-cell o"></div>
+                                    <div class="mini-cell x"></div>
+                                    <div class="mini-cell"></div>
+                                    <div class="mini-cell o"></div>
+                                    <div class="mini-cell x"></div>
+                                    <div class="mini-cell o"></div>
+                                </div>
+                            </div>
+                            <div class="game-features">
+                                <span class="feature-tag">AI Opponent</span>
+                                <span class="feature-tag">Strategy</span>
+                                <span class="feature-tag">Quick Play</span>
+                            </div>
+                        </div>
+                        <button class="play-btn">
+                            <i class="fas fa-play"></i>
+                            Play Now
+                        </button>
+                    </div>
+
+                    <div class="game-card" data-game="pacman">
+                        <div class="game-card-header">
+                            <div class="game-icon">
+                                <i class="fas fa-ghost"></i>
+                            </div>
+                            <h3>Pac-Man</h3>
+                            <p>Navigate the maze and collect dots</p>
+                        </div>
+                        <div class="game-card-body">
+                            <div class="game-preview">
+                                <div class="pacman-preview">
+                                    <div class="pacman-character"></div>
+                                    <div class="ghost ghost-1"></div>
+                                    <div class="ghost ghost-2"></div>
+                                    <div class="dots">
+                                        <span></span><span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="game-features">
+                                <span class="feature-tag">Arcade</span>
+                                <span class="feature-tag">Action</span>
+                                <span class="feature-tag">Multi-level</span>
+                            </div>
+                        </div>
+                        <button class="play-btn">
+                            <i class="fas fa-play"></i>
+                            Play Now
+                        </button>
+                    </div>
+
+                    <div class="game-card" data-game="chess">
+                        <div class="game-card-header">
+                            <div class="game-icon">
+                                <i class="fas fa-chess-king"></i>
+                            </div>
+                            <h3>Chess</h3>
+                            <p>The ultimate strategy game</p>
+                        </div>
+                        <div class="game-card-body">
+                            <div class="game-preview">
+                                <div class="chess-preview">
+                                    <div class="chess-piece king"></div>
+                                    <div class="chess-piece queen"></div>
+                                    <div class="chess-piece rook"></div>
+                                    <div class="chess-piece bishop"></div>
+                                </div>
+                            </div>
+                            <div class="game-features">
+                                <span class="feature-tag">Strategy</span>
+                                <span class="feature-tag">Tactical</span>
+                                <span class="feature-tag">Classic</span>
+                            </div>
+                        </div>
+                        <button class="play-btn">
+                            <i class="fas fa-play"></i>
+                            Play Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Games Section -->
+        <section id="games" class="section">
+            <div class="games-container">
+                <div class="game-nav">
+                    <button class="nav-btn active" data-game="tictactoe">
+                        <i class="fas fa-times"></i>
+                        Tic Tac Toe
+                    </button>
+                    <button class="nav-btn" data-game="pacman">
+                        <i class="fas fa-ghost"></i>
+                        Pac-Man
+                    </button>
+                    <button class="nav-btn" data-game="chess">
+                        <i class="fas fa-chess-king"></i>
+                        Chess
+                    </button>
+                </div>
+
+                <main class="game-container">
+                    <!-- Tic Tac Toe Game -->
+                    <div id="tictactoe" class="game active">
+                        <div class="game-header">
+                            <div class="game-title">
+                                <i class="fas fa-times"></i>
+                                <h2>Tic Tac Toe</h2>
+                            </div>
+                            <div class="score-board">
+                                <div class="score-item">
+                                    <span class="player-label">You</span>
+                                    <span class="score" id="player-score">0</span>
+                                </div>
+                                <div class="score-divider"></div>
+                                <div class="score-item">
+                                    <span class="player-label">AI</span>
+                                    <span class="score" id="ai-score">0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-status" id="tictactoe-status">Your turn (X)</div>
+                        <div class="board" id="tictactoe-board">
+                            <div class="cell" data-index="0"></div>
+                            <div class="cell" data-index="1"></div>
+                            <div class="cell" data-index="2"></div>
+                            <div class="cell" data-index="3"></div>
+                            <div class="cell" data-index="4"></div>
+                            <div class="cell" data-index="5"></div>
+                            <div class="cell" data-index="6"></div>
+                            <div class="cell" data-index="7"></div>
+                            <div class="cell" data-index="8"></div>
+                        </div>
+                        <div class="game-controls">
+                            <button class="reset-btn" id="tictactoe-reset">
+                                <i class="fas fa-redo"></i>
+                                New Game
+                            </button>
+                            <button class="settings-btn">
+                                <i class="fas fa-cog"></i>
+                                Settings
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Pac-Man Game -->
+                    <div id="pacman" class="game">
+                        <div class="game-header">
+                            <div class="game-title">
+                                <i class="fas fa-ghost"></i>
+                                <h2>Pac-Man</h2>
+                            </div>
+                            <div class="score-board">
+                                <div class="score-item">
+                                    <span class="player-label">Score</span>
+                                    <span class="score" id="pacman-score">0</span>
+                                </div>
+                                <div class="score-divider"></div>
+                                <div class="score-item">
+                                    <span class="player-label">Lives</span>
+                                    <span class="score" id="pacman-lives">3</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-status" id="pacman-status">Use arrow keys to move</div>
+                        <div class="canvas-container">
+                            <canvas id="pacman-canvas" width="400" height="400"></canvas>
+                        </div>
+                        <div class="controls">
+                            <button class="control-btn" id="pacman-up">
+                                <i class="fas fa-chevron-up"></i>
+                            </button>
+                            <div class="horizontal-controls">
+                                <button class="control-btn" id="pacman-left">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="control-btn" id="pacman-down">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <button class="control-btn" id="pacman-right">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="game-controls">
+                            <button class="reset-btn" id="pacman-reset">
+                                <i class="fas fa-redo"></i>
+                                New Game
+                            </button>
+                            <button class="pause-btn">
+                                <i class="fas fa-pause"></i>
+                                Pause
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Chess Game -->
+                    <div id="chess" class="game">
+                        <div class="game-header">
+                            <div class="game-title">
+                                <i class="fas fa-chess-king"></i>
+                                <h2>Chess</h2>
+                            </div>
+                            <div class="score-board">
+                                <div class="score-item">
+                                    <span class="player-label">Turn</span>
+                                    <span class="score" id="chess-turn">White</span>
+                                </div>
+                                <div class="score-divider"></div>
+                                <div class="score-item">
+                                    <span class="player-label">Captured</span>
+                                    <span class="score" id="chess-captured">0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-status" id="chess-status">White's turn</div>
+                        <div class="chess-container">
+                            <div class="chess-board" id="chess-board"></div>
+                            <div class="chess-sidebar">
+                                <div class="move-history">
+                                    <h4>Move History</h4>
+                                    <div class="moves-list" id="moves-list"></div>
+                                </div>
+                                <div class="captured-pieces">
+                                    <h4>Captured Pieces</h4>
+                                    <div class="pieces-list" id="captured-pieces"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-controls">
+                            <button class="reset-btn" id="chess-reset">
+                                <i class="fas fa-redo"></i>
+                                New Game
+                            </button>
+                            <button class="undo-btn">
+                                <i class="fas fa-undo"></i>
+                                Undo
+                            </button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="about-container">
+                <h2 class="section-title">About Our Games</h2>
+                <div class="about-content">
+                    <div class="about-intro">
+                        <p>Welcome to Gamers Den: The Loot Cave, where classic games meet modern technology. We've
+                            reimagined your
+                            favorite childhood games with beautiful graphics, smooth animations, and intelligent AI
+                            opponents.</p>
+                    </div>
+
+                    <div class="games-info">
+                        <div class="game-info-card">
+                            <div class="info-card-header">
+                                <i class="fas fa-times"></i>
+                                <h3>Tic Tac Toe</h3>
+                            </div>
+                            <p>A classic strategy game where you play against an intelligent AI. The AI uses the minimax
+                                algorithm to make optimal moves, making it a challenging opponent. Try to get three of
+                                your marks in a row, column, or diagonal to win!</p>
+                            <ul>
+                                <li><i class="fas fa-robot"></i> Play against AI with unbeatable strategy</li>
+                                <li><i class="fas fa-chart-line"></i> Track your wins and losses</li>
+                                <li><i class="fas fa-gamepad"></i> Simple yet engaging gameplay</li>
+                                <li><i class="fas fa-bolt"></i> Instant game switching</li>
+                            </ul>
+                        </div>
+
+                        <div class="game-info-card">
+                            <div class="info-card-header">
+                                <i class="fas fa-ghost"></i>
+                                <h3>Pac-Man</h3>
+                            </div>
+                            <p>Navigate through the maze, collect dots, and avoid the ghosts! This classic arcade game
+                                features smooth controls, multiple ghosts with different behaviors, and a scoring
+                                system. Can you clear the board without getting caught?</p>
+                            <ul>
+                                <li><i class="fas fa-maze"></i> Classic maze navigation gameplay</li>
+                                <li><i class="fas fa-ghost"></i> Multiple ghosts with AI behavior</li>
+                                <li><i class="fas fa-star"></i> Power pellets and scoring system</li>
+                                <li><i class="fas fa-keyboard"></i> Keyboard and touch controls</li>
+                            </ul>
+                        </div>
+
+                        <div class="game-info-card">
+                            <div class="info-card-header">
+                                <i class="fas fa-chess-king"></i>
+                                <h3>Chess</h3>
+                            </div>
+                            <p>The ultimate strategy game! Play chess with full piece movement rules, including special
+                                moves like pawn promotion. Each piece has unique movement patterns, and the goal is to
+                                checkmate your opponent's king.</p>
+                            <ul>
+                                <li><i class="fas fa-chess-board"></i> Complete chess rules implementation</li>
+                                <li><i class="fas fa-chess-piece"></i> All piece movements and captures</li>
+                                <li><i class="fas fa-eye"></i> Visual move indicators</li>
+                                <li><i class="fas fa-crown"></i> Checkmate and stalemate detection</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="features-section">
+                        <h3>Platform Features</h3>
+                        <div class="features-grid">
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-gamepad"></i>
+                                </div>
+                                <h4>Multiple Games</h4>
+                                <p>Three classic games in one place with seamless switching</p>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                                <h4>Statistics</h4>
+                                <p>Track your performance across all games with detailed analytics</p>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <h4>Responsive</h4>
+                                <p>Play on desktop, tablet, or mobile with optimized controls</p>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <h4>Fast Loading</h4>
+                                <p>Instant game switching and smooth 120 FPS performance</p>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                                <h4>Beautiful Design</h4>
+                                <p>Modern UI with animations and glassmorphism effects</p>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h4>No Downloads</h4>
+                                <p>Play directly in your browser without any Installations / Download </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="contact-container">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p>Have questions, suggestions, or want to report a bug? We'd love to hear from you! Our team is
+                            always ready to help improve your gaming experience.</p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>gamersden@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div>
+                                    <h4>Website</h4>
+                                    <p>www.gamersden.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Virtual Gaming World</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i>
+                                Name
+                            </label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i>
+                                Email
+                            </label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">
+                                <i class="fas fa-tag"></i>
+                                Subject
+                            </label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="bug">Bug Report</option>
+                                <option value="feature">Feature Request</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment"></i>
+                                Message
+                            </label>
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="Tell us what's on your mind..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Gamers Den: The Loot Cave</h4>
+                    <p>Classic games reimagined for the modern web. Enjoy timeless gameplay with beautiful graphics and
+                        smooth performance.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#games">Games</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Games</h4>
+                    <ul>
+                        <li><a href="#games" data-game="tictactoe">Tic Tac Toe</a></li>
+                        <li><a href="#games" data-game="pacman">Pac-Man</a></li>
+                        <li><a href="#games" data-game="chess">Chess</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gamers Den: The Loot Cave. All games are playable directly in your browser!</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Notification System -->
+    <div class="notification-container" id="notification-container"></div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loading-spinner">
+            <i class="fas fa-gamepad"></i>
+        </div>
+        <p>Loading Game...</p>
+    </div>
+
+    <script src="games/tictactoe.js"></script>
+    <script src="games/pacman.js"></script>
+    <script src="games/chess.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
